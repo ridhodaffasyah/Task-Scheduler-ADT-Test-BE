@@ -5,7 +5,7 @@ import { Task } from "../models/task.model.js";
 //Add Task
 const addTask = async (req, res) => {
   try {
-    const { title, desc, status, date } = req.body;
+    const { title, desc, date, status } = req.body;
 
     //Convert date from string to date format
     const dateParts = date.split("/");
